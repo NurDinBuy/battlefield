@@ -1,0 +1,334 @@
+/*--------CHARACTERS---------*/
+
+.characters-list-block {
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 45px 25px;
+}
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 370px;
+  border-radius: 9px;
+  text-align: center;
+  background-color: rgb(239, 233, 233);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.character-card:hover {
+  transform: translateY(-7px);
+}
+
+.character-card:hover .character-photo {
+  transform: translateY(-7px);
+}
+
+.character-photo {
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s;
+}
+
+.character-name {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #000;
+}
+
+.character-body {
+  font-size: 14px;
+  color: #555;
+  margin: 5px;
+}
+
+.characters {
+  background-image: url("https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/classes-rework/bf-2042-section-bg-classes-hub-top-xl.jpg.adapt.1920w.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-image {
+  width: 300px;
+  height: auto;
+  padding-top: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.character-text {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.character-text h4 {
+  text-align: center;
+}
+
+.carts_blcok {
+  background-image: url("../img/stadiuon.jpg");
+  /* background-image: url("../img/map-background.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+
+  text-align: center;
+}
+
+.carts_block_color {
+  background-color: #00000057;
+  height: 1000px;
+}
+
+.carts_blcok img {
+  margin-top: 50px;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 1.9));
+}
+
+.carts_blcok h2 {
+  margin-top: 25px;
+  font-size: 70px;
+  font-family: "BF Modernista Bold", sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carts_blcok p {
+  color: #ffffff;
+  width: 900px;
+  font-size: 27px;
+  margin: auto;
+  margin-top: 40px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carts_blok_one {
+  background-image: url("../img/map-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1200px;
+  text-align: center;
+}
+
+/* TAB SLIDER */
+.tab_slider {
+  padding-top: 70px;
+}
+
+.tab_slider h3 {
+  font-size: 50px;
+  font-family: "BF Modernista Bold", sans-serif;
+  margin-bottom: 55px;
+}
+
+.tab_content_block {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  /* transition: opacity 1s ease, transform 1s ease; 
+  opacity: 0;
+  transform: scale(0.95);  */
+}
+
+.tab_content_block img {
+  margin-left: 100px;
+  width: 1150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0px 25px rgba(255, 255, 255, 0.55);
+}
+
+.tab_content_items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+
+.inner_tab_slider {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  justify-content: flex-start;
+  gap: 90px;
+  /* align-items: center; */
+}
+
+.tab_content_item {
+  padding: 10px 20px;
+  width: 250px;
+  /* background-color: #333; */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 30px;
+  /* margin-left: 100px; */
+  font-family: "BF Modernista Bold", sans-serif;
+}
+
+.tab_content_item:hover {
+  background-color: #555;
+}
+
+.tab_content_item_active {
+  background-color: #6ff7cc;
+  color: #000;
+}
+
+.tab_description {
+  margin-top: 40px;
+  margin-left: 100px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "BF Modernista Bold", sans-serif;
+}
+
+/* .moving-block {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url("../img/1.gif") no-repeat center center;
+  background-size: cover;
+  z-index: 2;
+} */
+
+.moving-block {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  z-index: 2;
+}
+
+.moving-block img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  transform-origin: center;
+  transition: transform 0.1s ease-out;
+  filter: drop-shadow(10px 10px 15px rgba(255, 255, 255, 0.7));
+}
+
+/* Custom Slider Block */
+
+.custom-slider-block1 {
+  padding: 5px 0;
+  /* background: black; */
+  background-image: url("../img/newsletter-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+.custom-slider1 {
+  position: relative;
+  margin: auto;
+  width: 1520px;
+  height: 760px;
+  /* overflow: hidden; */
+  /* padding-top: 75px; */
+  margin-top: 15px;
+  /* padding-bottom: 100px; */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-slide1 {
+  position: absolute;
+  margin: auto;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  /* padding-top: 75px; */
+}
+
+.custom-slide1 img {
+  width: 1520px;
+  height: 760px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.324);
+}
+
+.custom-slide1.active-custom-slide1 {
+  opacity: 1;
+}
+
+.custom-btn-slide1 {
+  display: block;
+  /* margin-top: 0px; */
+  width: 40px;
+  height: 90%;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: 800;
+  z-index: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-slide1:hover {
+  border: 2px solid white;
+}
+
+/* 1111111111111111111111111111111111111 */
+
+.weapon-customization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-image img {
+  width: 1000px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+}
+
+.option-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.option-button.active {
+  background-color: #6ff7cc;
+  color: #000;
+}
+
+.option-button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,669 @@
+@font-face {
+  font-family: "BF Modernista Bold";
+  src: url("../fonts/bf-modernista-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BF Modernista Solid";
+  src: url("../fonts/bf-modernista-solid-medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.block_up {
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+}
+
+/* HEADER */
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 79vh;
+  overflow: hidden;
+  background-color: #00000040;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  z-index: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.content a {
+  color: #f0fffa;
+  font-family: "BF Modernista Solid", sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content a:hover {
+  color: #6ff7cc;
+}
+
+.content img {
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 1.9));
+}
+
+/* .block_info {
+  width: 100%; 
+  height: 150px; 
+}
+
+.block_info img {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover; 
+} */
+
+.block_info {
+  width: 100%;
+  height: 100px;
+  background-image: url("https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-5/pcc/bf2042-s5-patch-note-product-conversion-xl.jpg.adapt.1920w.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+}
+
+.block_info h3 {
+  padding: 30px;
+  font-family: "BF Modernista Bold", sans-serif;
+}
+
+.block_info_one h3 {
+  font-size: 70px;
+  color: #6ff7cc;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding-top: 70px;
+  padding-bottom: 20px;
+  font-family: "BF Modernista Bold", sans-serif;
+}
+
+.block_info_one p {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 420px;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.block_info_one {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/homepage/common/bf-2042-section-bg-homepage-experiences-xl.jpg.adapt.1920w.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.block_modes {
+  position: relative;
+  background-color: #000000;
+  margin-top: -250px;
+}
+
+.block_modes h3 {
+  font-family: "BF Modernista Bold", sans-serif;
+}
+
+.block_play h3 {
+  font-size: 55px;
+}
+
+.block_play {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  margin-bottom: 200px;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  height: 60px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.inner_header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn_test {
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+  background: black;
+  color: var(--orange);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: "BF Modernista Bold", sans-serif;
+}
+
+.btn_test:hover {
+  background-color: #6ff7cc;
+  color: #000000;
+}
+
+/* LOGOTYPE */
+
+.logotype {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  height: 60px;
+  width: fit-content;
+  background: var(--orange);
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* HEADER MENU */
+
+.menu_link a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu_link a.active {
+  color: #6ff7cc;
+  border: 1px solid #6ff7cc;
+}
+
+.menu_link a:hover {
+  text-decoration: none;
+  background-color: #6ff7cc;
+  color: #000000;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  gap: 25px;
+}
+
+.menu_link a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* .menu_link a:hover {
+  text-decoration: underline;
+} */
+
+/* MAIN BLOCK */
+
+.main_block {
+  padding: 100px 0;
+  background: black;
+}
+
+/* BUTTONS COLOR PICKER */
+
+.colors-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.btn-color {
+  border-radius: 20px;
+  border-color: white !important;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #2c2d2f;
+  width: 100%;
+}
+
+.inner_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.footer h2 {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 600;
+  text-align: center;
+  margin-left: 33%;
+}
+
+.support {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "BF Modernista Solid", sans-serif;
+}
+
+/* SLIDER BLOCK */
+
+.slider_block {
+  padding: 100px 0;
+  background: black;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  margin-top: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.slide {
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide_card {
+  color: white;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+.slide_card h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.slide_card p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.slide_card a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.slide.active_slide {
+  display: block;
+}
+
+.btn-slide-new {
+  display: block;
+  width: 40px;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: 800;
+  z-index: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-slide-new:hover {
+  border: 2px solid white;
+}
+
+/* 1111111111111111111111111111111111111111 */
+
+.slide1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+
+  /* border: solid red; */
+}
+
+.img1 {
+  width: 70%;
+}
+
+.img1 img {
+  width: 90%;
+  height: auto;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+.text1 {
+  width: 70%;
+  padding-right: 25px;
+  color: white;
+  margin-right: 50px;
+}
+
+.text1 h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.text1 p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* VIDEO BLOCK */
+
+.block_video {
+  /* background: black; */
+  background-image: url("https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/newsletter-background-image.jpg.adapt.1920w.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.block_video h3 {
+  font-size: 35px;
+}
+
+.inner_block_video {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+.modal_dialog {
+  max-width: 500px;
+  margin: 200px auto;
+}
+
+.modal_content {
+  position: relative;
+  width: 100%;
+
+  padding: 40px;
+  background-color: black;
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+  max-height: 90vh;
+  height: 400px;
+  overflow-y: auto;
+  font-family: "BF Modernista Bold", sans-serif;
+}
+
+.modal_content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal_close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: red;
+  opacity: 0.5;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal_title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modal_input,
+.btn_min {
+  width: 100% !important;
+  margin-top: 10px;
+}
+
+/*-------BOTTLE-------*/
+
+.botlle {
+  background: black;
+  padding: 100px 0;
+}
+
+.bottle_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bowl {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: 8px solid transparent;
+  animation: animate 5s linear infinite;
+  transform-origin: bottom center;
+  animation-play-state: run;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(22deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-22deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.bowl::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 30px;
+  border: 15px solid #444;
+  border-radius: 50%;
+  box-shadow: 0 10px #222;
+}
+
+.bowl::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  transform-origin: center;
+  animation: animatebowlshadow 5s linear infinite;
+  border-radius: 50%;
+  animation-play-state: running;
+}
+
+@keyframes animatebowlshadow {
+  0% {
+    left: 50%;
+    width: 150px;
+    height: 60px;
+  }
+  25% {
+    left: 55%;
+    width: 140px;
+    height: 65px;
+  }
+  50% {
+    left: 50%;
+    width: 150px;
+    height: 60px;
+  }
+  75% {
+    left: 45%;
+    width: 140px;
+    height: 65px;
+  }
+  100% {
+  }
+}
+
+.liquid {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #1ae907;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  filter: drop-shadow(0 0 80px #1ae907);
+  transform-origin: top center;
+  animation: animateliquid 5s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes animateliquid {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-22deg);
+  }
+  30% {
+    transform: rotate(-23deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(22deg);
+  }
+  80% {
+    transform: rotate(23deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.liquid::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 20px;
+  background: #15be05;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 80px #15be05);
+}
+
+.shadow {
+  position: absolute;
+  top: calc(50% + 150px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  animation: animateshadow 5s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes animateshadow {
+  0% {
+    left: 50%;
+    width: 260px;
+    height: 40px;
+    top: calc(50% + 150px);
+  }
+
+  25% {
+    left: 55%;
+    width: 265px;
+    height: 30px;
+    top: calc(50% + 130px);
+  }
+  50% {
+    left: 50%;
+    width: 260px;
+    height: 40px;
+    top: calc(50% + 150px);
+  }
+  75% {
+    left: 45%;
+    width: 265px;
+    height: 30px;
+    top: calc(50% + 130px);
+  }
+  100% {
+  }
+}

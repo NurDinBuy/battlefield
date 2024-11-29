@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/core.css" />
+    <link rel="stylesheet" href="../css/lessons.css" />
+    <link rel="stylesheet" href="../css/cards.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="block_up"></div>
+      <div class="header">
+        <div class="container">
+          <div class="inner_header">
+            <a href="../index.html">
+              <!-- <div class="logotype">
+         
+              </div> -->
+              <img
+                src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-01/bf-2042-white-nav-logo.svg"
+                alt=""
+              />
+            </a>
+            <ul class="menu">
+              <li class="menu_link">
+                <a href="../index.html">События</a>
+              </li>
+              <li class="menu_link">
+                <a href="lessons.html">Персонажи</a>
+              </li>
+              <li class="menu_link">
+                <a href="carts.html">Карты</a>
+              </li>
+              <li class="menu_link">
+                <a href="castom.html">Кастомизация</a>
+              </li>
+              <li class="menu_link">
+                <a href="cards.html" class="active">Карточки</a>
+              </li>
+            </ul>
+            <button class="btn_test" id="btn-get">Beta</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="characters">
+        <div class="container">
+          <div class="characters-list"></div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <a href="" target="_blank">
+            <div class="inner_footer">
+              <img
+                src="https://media.contentapi.ea.com/content/dam/bf/ru-ru/common/www-commandandconquer-ea-logo.png"
+                alt="logo"
+              />
+              <h2>BATTLEFIELD™ EA</h2>
+              <p class="support">Support <i>battlefield42@gmail.com</i></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal_dialog">
+        <div class="modal_content">
+          <form action="#">
+            <div class="modal_close">&times;</div>
+            <img
+              src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-01/bf-2042-white-nav-logo.svg"
+              alt=""
+            />
+            <div class="modal_title">Записаться на Beta test</div>
+            <input
+              required
+              placeholder="Ваше имя"
+              name="name"
+              type="text"
+              class="modal_input"
+            />
+            <input
+              required
+              placeholder="Ваш номер телефона"
+              name="phone"
+              type="text"
+              class="modal_input"
+            />
+            <button class="btn btn_dark btn_min">Подтвердить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/cards.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>
